@@ -1,0 +1,141 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  height: 100vh;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 12s linear infinite;
+
+  img {
+    width: 140px;
+    height:60px;
+  }
+}
+
+.marquee-logo {
+  flex: 0 0 auto; /* Prevent shrinking */
+  margin-left: 2rem;
+  animation: marquee 10s linear infinite;
+}
+
+.item:hover {
+  width: 40%;
+  transition: all 0.5s;
+}
+
+.item:hover h2 {
+  transition: all 0.5s;
+  opacity: 100;
+}
+
+.link {
+  h1 {
+    cursor: pointer;
+  }
+}
+
+
+.dark {
+  background: #030303e6;
+
+  h1 {
+    color: #fff;
+  }
+  h3 {
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  h2 {
+    color: #fff;
+  }
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #fff;
+  }
+
+  #uzb {
+    background: #030303e6;
+  }
+
+  #uzbb {
+    background: #030303e6;
+  }
+
+  #carusel {
+    background: #030303e6;
+  }
+
+  #logos {
+    display: none !important;
+  }
+
+  #logo {
+    display: block !important;
+    color: white !important;
+    fill: #fff !important;
+  }
+
+  #drop {
+    background: #030303e6;
+  }
+
+  img {
+    color: white;
+  }
+
+  #footer {
+    background: #030303e6;
+  }
+
+  #txt {
+    color: white;
+    border-bottom: 2px solid #fff;
+  }
+
+  #redden {
+    h1 {
+      color: brown;
+    }
+  }
+
+  #redden {
+    color: brown;
+  }
+
+  #blacked {
+    color: #000;
+  }
+
+  #globe {
+    color: #fff;
+  }
+
+}
+
